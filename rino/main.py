@@ -10,7 +10,7 @@ if __name__ == '__main__':
     year = input('year />:')#2002
     month = input('month />:')
     day = input('day />:')
-    n_days = input('number of days you need to download />:')
+    n_days = int(input('number of days you need to download />:'))
     email = input('Input the registered email to ftps://gdc.cddis.eosdis.nasa.gov/ />:')
     # read rinex
     dtime = datetime.datetime.strptime('{}-{}-{}'.format(year,month,day),"%Y-%m-%d")
